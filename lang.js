@@ -41,7 +41,7 @@ const translations = {
       desc: "A simple bot made with Telegraf. Ready to use."
     },
     project4: {
-      title: "Coming soon!",
+      title: "Working on this!",
       desc: "🚧🚧🚧🚧"
     }
   },
