@@ -67,8 +67,31 @@ const translations = {
       title: "Em breve!",
       desc: "🚧🚧🚧🚧"
     }
+  },
+  jp: {
+    title: "こんにちは！スモーキーです",
+    desc: "💻 バックエンドプログラマーでJavaScript愛好家です",
+    github: "GitHub",
+    projects: "注目のプロジェクト",
+    footer: "Smokyy14 が ❤️ を込めて作成しました",
+    project1: {
+      title: "WhatsAppボット",
+      desc: "すぐに使えるWhatsAppボット。現在は非推奨です。"
+    },
+    project2: {
+      title: "Discordボット",
+      desc: "Discord.jsで作られた、カスタマイズ可能なボットです。"
+    },
+    project3: {
+      title: "Telegramボット",
+      desc: "Telegrafで作られたシンプルなボット。すぐに使用できます。"
+    },
+    project4: {
+      title: "近日公開！",
+      desc: "🚧🚧🚧🚧"
   }
-};
+
+  }}
 
 const langSelect = document.getElementById("language");
 
