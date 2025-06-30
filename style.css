@@ -1,0 +1,149 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+a {
+  color: #4070da;
+  text-decoration: none;
+}
+
+.floating-lang-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #161b22;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+.floating-lang-selector select {
+  background: #0d1117;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url("./Fondo_header.jpg"); 
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 130px; /* 120px + bordes */
+  height: 130px;
+  margin: 0 auto; /* centra horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rainbow-border {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #bb02ac,
+    purple,
+    blue,
+    #bb02ac
+  );
+  animation: spin 4s linear infinite;
+  z-index: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #0d1117;
+  position: relative;
+  z-index: 1;
+}
+
+/* Rotación solo del borde */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #8890d4;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #2ea043;
+}
+
+.projects {
+  padding: 40px 20px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 20px;
+}
+
+.project {
+  background: #21262d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #161b22;
+  color: #8b949e;
+}
