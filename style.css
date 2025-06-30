@@ -5,11 +5,6 @@ body {
   color: #c9d1d9;
 }
 
-a {
-  color: #4070da;
-  text-decoration: none;
-}
-
 .floating-lang-selector {
   position: fixed;
   top: 20px;
@@ -76,10 +71,12 @@ header * {
   height: 130px;
   border-radius: 50%;
  background: conic-gradient(
-  #D60270,
-  #9B4F96,
-  #0038A8,
-  #D60270
+  blue,
+  red,
+  green,
+  orange,
+  purple,
+  blue
 );
   animation: spin 4s linear infinite;
   z-index: 0;
@@ -120,7 +117,6 @@ header * {
   z-index: 1;
 }
 
-/* Rotación solo del borde */
 @keyframes spin {
   to {
     transform: rotate(360deg);

@@ -18,8 +18,8 @@ const translations = {
       desc: "Un bot sencillo hecho con Telegraf. Listo para usar."
     },
     project4: {
-      title: "¡Próximamente!",
-      desc: "🚧🚧🚧🚧"
+      title: "Mi pagina",
+      desc: "El repositorio de esta pagina."
     }
   },
   en: {
@@ -41,8 +41,8 @@ const translations = {
       desc: "A simple bot made with Telegraf. Ready to use."
     },
     project4: {
-      title: "Working on this!",
-      desc: "🚧🚧🚧🚧"
+      title: "My page", 
+      desc: "The repository of this page."
     }
   },
   pt: {
@@ -64,8 +64,8 @@ const translations = {
       desc: "Um bot simples feito com Telegraf. Pronto para usar."
     },
     project4: {
-      title: "Em breve!",
-      desc: "🚧🚧🚧🚧"
+      title: "Minha página",
+      desc: "O repositório desta página"
     }
   },
   jp: {
@@ -87,8 +87,8 @@ const translations = {
       desc: "Telegrafで作られたシンプルなボット。すぐに使用できます。"
     },
     project4: {
-      title: "近日公開！",
-      desc: "🚧🚧🚧🚧"
+      title: "マイページ",
+      desc: "このページのリポジトリ"
   }
 
   }}
