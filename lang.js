@@ -5,6 +5,7 @@ const translations = {
     github: "GitHub",
     projects: "Proyectos Destacados",
     footer: "Hecho con ❤️ por Smokyy14",
+    toastCopy: "¡Correo copiado al portapapeles!",
     project1: {
       title: "WhatsApp Bot",
       desc: "Un bot de Whatsapp listo para utilizar. Desactualizado."
@@ -28,6 +29,7 @@ const translations = {
     github: "GitHub",
     projects: "Featured Projects",
     footer: "Made with ❤️ by Smokyy14",
+    toastCopy: "Email copied to clipboard!",
     project1: {
       title: "WhatsApp Bot",
       desc: "A WhatsApp bot ready to use. Outdated."
@@ -51,6 +53,7 @@ const translations = {
     github: "GitHub",
     projects: "Projetos em Destaque",
     footer: "Feito com ❤️ por Smokyy14",
+    toastCopy: "Email copiado para a área de transferência!",
     project1: {
       title: "Bot do WhatsApp",
       desc: "Um bot de WhatsApp pronto para usar. Desatualizado."
@@ -68,12 +71,13 @@ const translations = {
       desc: "O repositório desta página"
     }
   },
-  jp: {
-    title: "こんにちは！スモーキーです",
+    jp: {
+    title: "こんにちは！私は Smoky です",
     desc: "💻 バックエンドプログラマーでJavaScript愛好家です",
     github: "GitHub",
     projects: "注目のプロジェクト",
     footer: "Smokyy14 が ❤️ を込めて作成しました",
+    toastCopy: "メールがクリップボードにコピーされました！",
     project1: {
       title: "WhatsAppボット",
       desc: "すぐに使えるWhatsAppボット。現在は非推奨です。"
@@ -89,9 +93,9 @@ const translations = {
     project4: {
       title: "マイページ",
       desc: "このページのリポジトリ"
+    }
   }
-
-  }}
+};
 
 const langSelect = document.getElementById("language");
 
@@ -99,7 +103,6 @@ function applyLang(lang) {
   const t = translations[lang] || translations["es"];
   document.getElementById("title").textContent = t.title;
   document.getElementById("desc").textContent = t.desc;
-  document.getElementById("github-btn").textContent = t.github;
   document.getElementById("projects-title").textContent = t.projects;
   document.getElementById("footer-text").textContent = t.footer;
 

@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
   <div class="social-links">
@@ -23,13 +25,19 @@
   <a href="https://github.com/Smokyy14" target="_blank" title="GitHub">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8FV8SCzjlNqk2yzFPetRZbY7j258d8-MuA&s" alt="GitHub" />
   </a>
+  <a href="https://steamcommunity.com/id/Smokyy14/" target="_blank" title="Steam">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" alt="Steam" />
+  </a>
+  <button onclick="copyGmail()" class="icon-button" id="gmail-button" title="Gmail">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" id="gmail-icon" />
+</button>
 </div>
 
     <div class="avatar-wrapper">
       <div class="rainbow-border"></div>
       <img src="https://i.ibb.co/RGJShRR4/Saul-Goodman.jpg" alt="Avatar" class="avatar" />
     </div>
-    <h1 id="title">¡Hola! Soy Smokyy</h1> 
+    <h1 id="title" class="bcs-title skewed">¡Hola! Soy Smokyy</h1> 
     <p id="desc">💻 Backend & JavaScript Lover</p> 
     </header>
 
@@ -75,5 +83,8 @@
   </div>
 
   <script src="lang.js"></script>
+  <script src="copyGmail.js"></script>
+  
+  <div id="toast" class="toast">¡Correo copiado al portapapeles!</div>
 </body>
 </html>
